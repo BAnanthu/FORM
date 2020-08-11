@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+welcome
+        {% if user.is_authenticated %}
+         <a href="/accountSignout/signout/">Sign Out</a>
+        {% else %}
+         <a href="/accountSignin/">Sign In</a>
+        {% endif %}
+</body>
+</html>
